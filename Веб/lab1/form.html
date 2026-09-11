@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html lang="uk">
+
+<head>
+    <title>Форма</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Лабораторна робота №1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконала Скрипка Софія КН-31</h2>
+    <hr />
+    <a href="index.html">На головну</a>
+    <h1>Завдання</h1>
+    <p>Необхідно розробити форму для реєстрації студента у веб-системі. Необхідно заповнити наступні данні:</p>
+    <ul>
+        <li>
+            основні дані про студента, включають ПІБ, назву групи (вибирається із списку), форму навчання(бюджет або контракт) реалізується у вигляді перемикача, коротку інформацію про студента, електрона адреса студента;
+        </li>
+        <li>
+            особисті дані студента, включають дані паспорта, ідентифікаційний код, рік народження, стать (реалізується у вигляді перемикача).
+        </li>
+    </ul>
+    <form action="" method="POST"> 
+        <fieldset>
+            <legend>Основні дані про студента</legend>
+            <label>ПІБ
+                <input id="name" type="text">
+            </label>
+            <label>Група
+                <select id="group">
+                    <option>КН-31</option>
+                    <option>КН-32</option>
+                    <option>АнД-31</option>
+                </select>
+            </label>
+            <p>Форма навчання
+                <br>
+                <label>Бюджет<input id="free" type="radio" name="education_form"></label> 
+                <label>Контракт<input id="paid" type="radio" name="education_form"> </label>
+            </p>
+            <label>Коротка інформація про студента
+                <textarea id="info" rows="4" cols="30"></textarea>
+            </label>
+            <label>Електронна адреса
+                <input id="email" type="email">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Особисті дані про студента</legend>
+            <label>Номер паспорта
+                <input id="passport_number" type="text">
+            </label>
+            <label>Термін дії
+                <input id="exp_date" type="date">
+            </label>
+            <label>Ідентифікаційний код
+                <input id="id_code" type="number">
+            </label>
+            <label>Рік народження
+                <input id="birth_year" type="number">
+            </label>
+            <p>Стать
+                <br>
+                <label>Жіноча<input id="female" type="radio" name="sex"></label> 
+                <label>Чоловіча<input id="male" type="radio" name="sex"> </label>
+            </p>
+        </fieldset>
+        <button type="submit">Відправити</button>
+</body>
