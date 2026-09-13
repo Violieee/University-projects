@@ -1,0 +1,6 @@
+@import url("style_page1.css");
+
+body{
+    background-image: url("../img/Pinus_sylvestris_blue.jpg");
+    background-size: cover
+}

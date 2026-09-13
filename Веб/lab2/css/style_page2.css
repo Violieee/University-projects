@@ -1,0 +1,31 @@
+@import url("style_page1.css");
+
+h2{
+    text-align: left;
+}
+
+span{
+    font-weight: cursive;
+    color: #c72626
+}
+
+img{
+    margin: 10px
+}
+
+.img_left{
+    float: left
+}
+
+.img_right{
+    float: right;
+    width: 25%
+}
+
+.p_cursive_brown{
+    font-style: italic;
+    color: #6b4343
+}
+.p_underline{
+    text-decoration: underline
+}
