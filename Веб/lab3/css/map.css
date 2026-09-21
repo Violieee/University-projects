@@ -1,0 +1,9 @@
+.map {
+    width: var(--width-content);
+    text-align: center;
+}
+
+.map img {
+    width: 700px;
+    height: 450px;
+}

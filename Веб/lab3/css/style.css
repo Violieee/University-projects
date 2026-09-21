@@ -1,0 +1,29 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(header.css);
+@import url(main.css);
+@import url(menu.css);
+@import url(ad.css);
+@import url(footer.css);
+@import url(photoalbum.css);
+@import url(map.css);
+body{
+    margin: auto;
+    max-width: var(--width-site);
+}
+.container{
+    width: var(--width-site);
+    height: var(--height-site);
+    background-color: var(--color-green);
+    color: var(--color-brown);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p);
+}
+
+.text_border {
+    text-shadow:
+        1px 0 1px #000000,
+        -1px 0 1px #000000,
+        0 -1px 1px #000000,
+        0 1px 1px #000000;
+}

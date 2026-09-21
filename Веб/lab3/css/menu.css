@@ -1,0 +1,23 @@
+.menu {
+    height: var(--height-site);
+    width: var(--width-menu);
+    position: fixed;
+    top: 0;
+    right: calc((100% - var(--width-site)) / 2);
+    text-align: center;
+}
+
+.menu ul li {
+    margin-bottom: 50px;
+}
+
+.menu ul li a {
+    color: var(--color-brown);
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-menu);
+
+}
+
+.menu ul li a:hover {
+    color: var(--color-light-brown);
+}

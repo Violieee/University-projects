@@ -1,0 +1,42 @@
+.photoalbum {
+    width: var(--width-content);
+    text-align: center;
+}
+
+.photo_card {
+    position: relative;
+    width: var(--img-size);
+    height: var(--img-size);
+    display: inline-block;
+    margin-right: var(--gap-img)}
+
+.photo_img {
+    width: var(--img-size);
+    height: var(--img-size);
+    object-fit: cover;
+}
+
+.photo_text {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: var(--img-size);
+    height: var(--img-size);
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.photo_text p {
+    color: var(--color-light-brown);
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-p);
+    text-align: center;
+    padding-top: 90px;
+}
+
+.photo_card:hover .photo_text {
+    display: inline-block;
+}

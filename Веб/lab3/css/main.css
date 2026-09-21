@@ -1,0 +1,6 @@
+.main {
+    height: var(--height-main);
+    width: var(--width-content);
+    text-align: center;
+    color: var(--color-light-brown);
+}

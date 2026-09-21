@@ -1,0 +1,23 @@
+.ad {
+    width: var(--width-content);
+    height: var(--height-ad);
+
+    background-image: url("../img/ad.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.ad_text {
+    position: absolute;
+    top: 70px;
+
+    width: var(--width-content);
+
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-h1);
+    color: white;
+
+    text-align: center;
+}

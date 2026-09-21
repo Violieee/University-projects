@@ -1,0 +1,7 @@
+.footer {
+    height: var(--height-footer);
+    width: var(--width-content);
+    text-align: center;
+    color: #000000;
+    font-family: var(--font-family-text);
+}
