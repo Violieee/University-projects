@@ -1,0 +1,13 @@
+.header {
+    width: calc(100% - var(--width-menu));
+
+    padding: 30px 20px;
+
+    font-family: var(--font-family-h);
+    color: var(--color-brown);
+    text-align: center;
+}
+
+.header h1 {
+    font-size: var(--font-size-h1);
+}

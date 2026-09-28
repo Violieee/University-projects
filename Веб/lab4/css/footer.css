@@ -1,0 +1,9 @@
+.footer {
+    width: calc(100% - var(--width-menu));
+
+    padding: 15px;
+
+    text-align: center;
+    color: #000000;
+    font-family: var(--font-family-text);
+}

@@ -1,0 +1,28 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap");
+:root {
+/* Кольори */
+--color-green: #3E5F23;
+--color-light-brown: #E6C9A7; 
+--color-brown: #C1A383;
+/* Шрифти та їх розміри */
+--font-family-h: "Pacifico"; --font-family-text: "Caveat";
+--font-size-h1: 64px;
+--font-size-menu: 40px;
+--font-size-p: 40px;
+/* Розміри сайту */     
+--width-site: 1440px;
+--height-site: 2500px;
+
+--width-content: 1140px;
+--width-menu: 300px;
+
+--height-header: 130px;
+--height-main: 2070px;
+--height-ad: 250px;
+--height-footer: 50px;
+
+--img-size: 250px;
+
+--gap-img: 50px;
+}
