@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sofia\\source\\repos\\lab3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E055FFAF-882A-4163-A943-C334CD4B8712}|lab3.Tests\\lab3.Tests.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E055FFAF-882A-4163-A943-C334CD4B8712}|lab3.Tests\\lab3.Tests.csproj|solutionrelative:lab3.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3\\rentalcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|solutionrelative:lab3\\rentalcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3\\apartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|solutionrelative:lab3\\apartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|solutionrelative:lab3\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3\\realestaterental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|solutionrelative:lab3\\realestaterental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 505,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 157,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.Tests\\Test1.cs",
+              "RelativeDocumentMoniker": "lab3.Tests\\Test1.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.Tests\\Test1.cs",
+              "RelativeToolTip": "lab3.Tests\\Test1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T07:07:31.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentalCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RentalCalculator.cs",
+              "RelativeDocumentMoniker": "lab3\\RentalCalculator.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RentalCalculator.cs",
+              "RelativeToolTip": "lab3\\RentalCalculator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T06:58:19.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RealEstateRental.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RealEstateRental.cs",
+              "RelativeDocumentMoniker": "lab3\\RealEstateRental.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RealEstateRental.cs",
+              "RelativeToolTip": "lab3\\RealEstateRental.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T06:58:13.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Apartment.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\Apartment.cs",
+              "RelativeDocumentMoniker": "lab3\\Apartment.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\Apartment.cs",
+              "RelativeToolTip": "lab3\\Apartment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T06:57:56.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "House.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\House.cs",
+              "RelativeDocumentMoniker": "lab3\\House.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\House.cs",
+              "RelativeToolTip": "lab3\\House.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T06:57:39.234Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
