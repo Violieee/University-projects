@@ -1,0 +1,74 @@
+<!doctype HTML> 
+<html> 
+    <head> 
+        <title>Лабораторна робота No5</title>  
+        <link type="text/css" rel="stylesheet" href="style.css">  
+        <script src="task1.js" defer></script> 
+    </head> 
+
+    <body> 
+        <main class="main"> 
+
+            <header class="header"> 
+                <h1>Лабораторна робота №5</h1> 
+                <h2>Виконала Скрипка Софія КН-31</h2> 
+            </header> 
+
+            <nav class="menu"> 
+                <a href="index.html" class="active">Завдання №1</a> 
+                <a href="task2.html">Завдання №2</a> 
+                <a href="task3.html">Завдання №3</a> 
+            </nav> 
+
+            <h2>Завдання:</h2> 
+
+            <div class="task"> 
+                Створити масиви значень для рейсів:  
+                <br>- Номер рейсу;  
+                <br>- Початковий пункт;  
+                <br>- Кінцевий пункт; 
+                <br>- Тривалість рейсу;  
+                <br><br>
+                <br>Вивести інформацію у вигляді інформаційного табло, в якому визначити 
+                <br>які рейси вже в повітрі, які ще не вилітали, для таких вказати час, що залишився 
+                <br>до вильоту. Початковий та кінцевий пункт обираються зі списку.
+            </div> 
+
+            <h2>Оберіть рейс:</h2>
+
+            <div class="flight-select">
+
+                <label for="startPoint">Початковий пункт:</label>
+
+                <select id="startPoint">
+                    <option value="Київ">Київ</option>
+                    <option value="Львів">Львів</option>
+                    <option value="Одеса">Одеса</option>
+                </select>
+
+
+                <label for="endPoint">Кінцевий пункт:</label>
+
+                <select id="endPoint">
+                    <option value="Варшава">Варшава</option>
+                    <option value="Прага">Прага</option>
+                    <option value="Берлін">Берлін</option>
+                    <option value="Відень">Відень</option>
+                    <option value="Париж">Париж</option>
+                </select>
+
+            </div>
+
+            <br>
+
+            <button class="button" onclick="table()"> 
+                Вивести інформацію
+            </button> 
+
+            <h2>Інформаційне табло:</h2>
+
+            <div id="result"></div> 
+
+        </main> 
+    </body> 
+</html>

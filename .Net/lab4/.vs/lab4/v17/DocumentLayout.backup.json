@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sofia\\source\\repos\\lab4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\iinfrastructureevaluable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\iinfrastructureevaluable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\irentable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\irentable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\realestaterental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\realestaterental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\office.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\office.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\apartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\apartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|c:\\users\\sofia\\source\\repos\\lab4\\lab4\\iutilitycalculable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab4\\lab4.csproj|solutionrelative:lab4\\iutilitycalculable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 505,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RealEstateRental.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\RealEstateRental.cs",
+              "RelativeDocumentMoniker": "lab4\\RealEstateRental.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\RealEstateRental.cs",
+              "RelativeToolTip": "lab4\\RealEstateRental.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:52:29.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRentable.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\IRentable.cs",
+              "RelativeDocumentMoniker": "lab4\\IRentable.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\IRentable.cs",
+              "RelativeToolTip": "lab4\\IRentable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:52:23.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "House.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\House.cs",
+              "RelativeDocumentMoniker": "lab4\\House.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\House.cs",
+              "RelativeToolTip": "lab4\\House.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:52:00.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IInfrastructureEvaluable.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\IInfrastructureEvaluable.cs",
+              "RelativeDocumentMoniker": "lab4\\IInfrastructureEvaluable.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\IInfrastructureEvaluable.cs",
+              "RelativeToolTip": "lab4\\IInfrastructureEvaluable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:52:02.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Office.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\Office.cs",
+              "RelativeDocumentMoniker": "lab4\\Office.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\Office.cs",
+              "RelativeToolTip": "lab4\\Office.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:51:37.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Apartment.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\Apartment.cs",
+              "RelativeDocumentMoniker": "lab4\\Apartment.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\Apartment.cs",
+              "RelativeToolTip": "lab4\\Apartment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:51:25.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUtilityCalculable.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\IUtilityCalculable.cs",
+              "RelativeDocumentMoniker": "lab4\\IUtilityCalculable.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab4\\lab4\\IUtilityCalculable.cs",
+              "RelativeToolTip": "lab4\\IUtilityCalculable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:51:31.619Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 157,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

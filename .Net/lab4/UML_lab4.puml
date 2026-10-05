@@ -1,0 +1,61 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface IRentable {
+  +Pay() : void
+  +TerminateContract() : void
+}
+
+interface IUtilityCalculable {
+  +CalculateUtilities() : decimal
+}
+
+interface IInfrastructureEvaluable {
+  +EvaluateInfrastructure() : string
+}
+
+abstract class RealEstateRental {
+  +Address : string
+  +MonthlyPrice : decimal
+  +TotalArea : double
+  #RealEstateRental(address : string, monthlyPrice : decimal, totalArea : double)
+  +Pay() : void
+  +TerminateContract() : void
+}
+
+class Apartment {
+  +NumberOfRooms : int
+  +Apartment(address : string, price : decimal, area : double, rooms : int)
+  +CalculateUtilities() : decimal
+}
+
+class House {
+  +HasGarden : bool
+  +PublicTransportNearby : bool
+  +ShopNearby : bool
+  +SchoolNearby : bool
+  +House(address : string, price : decimal, area : double, hasGarden : bool)
+  +EvaluateInfrastructure() : string
+}
+
+class Office {
+  +Office(address : string, price : decimal, area : double)
+  +CalculateUtilities() : decimal
+}
+
+class RentalCalculator {
+  -rentals : List<RealEstateRental>
+  -areaMin : double
+  +RentalCalculator(rentals : List<RealEstateRental>, areaMin : double = 0)
+  +CalculateAverageMonthlyPrice() : decimal
+}
+
+RealEstateRental ..|> IRentable
+Apartment --|> RealEstateRental
+Apartment ..|> IUtilityCalculable
+House --|> RealEstateRental
+House ..|> IInfrastructureEvaluable
+Office --|> RealEstateRental
+Office ..|> IUtilityCalculable
+RentalCalculator o-- "0..*" RealEstateRental : rentals
+@enduml

@@ -1,0 +1,181 @@
+<Window x:Class="lab4.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="lab4 — Оренда нерухомості"
+        Height="680"
+        Width="780">
+
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Оренда нерухомості"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Адреса:"
+                       VerticalAlignment="Center"/>
+
+            <TextBox x:Name="AddressTextBox"
+                     Grid.Row="0"
+                     Grid.Column="1"
+                     Margin="5"/>
+
+            <TextBlock Grid.Row="0"
+                       Grid.Column="2"
+                       Text="Вартість за місяць:"
+                       VerticalAlignment="Center"/>
+
+            <TextBox x:Name="PriceTextBox"
+                     Grid.Row="0"
+                     Grid.Column="3"
+                     Margin="5"/>
+
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Text="Площа:"
+                       VerticalAlignment="Center"/>
+
+            <TextBox x:Name="AreaTextBox"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     Margin="5"/>
+
+            <TextBlock Grid.Row="1"
+                       Grid.Column="2"
+                       Text="Кількість кімнат:"
+                       VerticalAlignment="Center"/>
+
+            <TextBox x:Name="RoomsTextBox"
+                     Grid.Row="1"
+                     Grid.Column="3"
+                     Margin="5"/>
+
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Text="Наявність саду:"
+                       VerticalAlignment="Center"/>
+
+            <CheckBox x:Name="GardenCheckBox"
+                      Grid.Row="2"
+                      Grid.Column="1"
+                      VerticalAlignment="Center"
+                      Margin="5"/>
+
+            <TextBlock Grid.Row="2"
+                       Grid.Column="2"
+                       Text="Транспорт поруч:"
+                       VerticalAlignment="Center"/>
+
+            <CheckBox x:Name="TransportCheckBox"
+                      Grid.Row="2"
+                      Grid.Column="3"
+                      VerticalAlignment="Center"
+                      Margin="5"/>
+
+            <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       Text="Магазин поруч:"
+                       VerticalAlignment="Center"/>
+
+            <CheckBox x:Name="ShopCheckBox"
+                      Grid.Row="3"
+                      Grid.Column="1"
+                      VerticalAlignment="Center"
+                      Margin="5"/>
+
+            <TextBlock Grid.Row="3"
+                       Grid.Column="2"
+                       Text="Школа поруч:"
+                       VerticalAlignment="Center"/>
+
+            <CheckBox x:Name="SchoolCheckBox"
+                      Grid.Row="3"
+                      Grid.Column="3"
+                      VerticalAlignment="Center"
+                      Margin="5"/>
+
+            <Button Grid.Row="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Content="Додати квартиру"
+                    Margin="5"
+                    Click="AddApartment_Click"/>
+
+            <Button Grid.Row="5"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="2"
+                    Content="Додати будинок"
+                    Margin="5"
+                    Click="AddHouse_Click"/>
+
+            <Button Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Content="Додати офіс"
+                    Margin="5"
+                    Click="AddOffice_Click"/>
+
+            <Button Grid.Row="6"
+                    Grid.Column="0"
+                    Content="Оплатити"
+                    Margin="5"
+                    Click="Pay_Click"/>
+
+            <Button Grid.Row="6"
+                    Grid.Column="1"
+                    Content="Розірвати договір"
+                    Margin="5"
+                    Click="Terminate_Click"/>
+
+            <Button Grid.Row="6"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="2"
+                    Content="Середня місячна ціна"
+                    Margin="5"
+                    Click="Calculate_Click"/>
+
+        </Grid>
+
+        <ListBox x:Name="RentalListBox"
+                 Grid.Row="2"
+                 Margin="0,20,0,20"
+                 FontSize="15"/>
+
+        <TextBlock x:Name="ResultTextBlock"
+                   Grid.Row="3"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+
+    </Grid>
+</Window>

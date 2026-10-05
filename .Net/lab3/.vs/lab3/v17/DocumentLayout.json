@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Sofia\\source\\repos\\lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|solutionrelative:lab3.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.wpf\\lab3.wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|solutionrelative:lab3.wpf\\lab3.wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E055FFAF-882A-4163-A943-C334CD4B8712}|lab3.Tests\\lab3.Tests.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E055FFAF-882A-4163-A943-C334CD4B8712}|lab3.Tests\\lab3.Tests.csproj|solutionrelative:lab3.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3\\rentalcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|solutionrelative:lab3\\rentalcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,6 +17,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3\\realestaterental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EA2152-D392-4222-9D69-B321B21339D2}|lab3\\lab3.csproj|solutionrelative:lab3\\realestaterental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E055FFAF-882A-4163-A943-C334CD4B8712}|lab3.Tests\\lab3.Tests.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E055FFAF-882A-4163-A943-C334CD4B8712}|lab3.Tests\\lab3.Tests.csproj|solutionrelative:lab3.tests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|solutionrelative:lab3.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|c:\\users\\sofia\\source\\repos\\lab3\\lab3.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9CBCB0AF-8D16-4E6B-802F-9C3A7F7D6545}|lab3.WPF\\lab3.WPF.csproj|solutionrelative:lab3.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +52,7 @@
         },
         {
           "DockedWidth": 157,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,97 +71,94 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "lab3.WPF\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.WPF\\MainWindow.xaml",
               "RelativeToolTip": "lab3.WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-28T07:21:24.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T07:21:24.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "lab3.WPF",
-              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.WPF\\lab3.WPF.csproj",
-              "RelativeDocumentMoniker": "lab3.WPF\\lab3.WPF.csproj",
-              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.WPF\\lab3.WPF.csproj",
-              "RelativeToolTip": "lab3.WPF\\lab3.WPF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-28T07:09:11.339Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "lab3.WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "lab3.WPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T07:54:54.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Test1.cs",
               "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.Tests\\Test1.cs",
               "RelativeDocumentMoniker": "lab3.Tests\\Test1.cs",
               "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3.Tests\\Test1.cs",
               "RelativeToolTip": "lab3.Tests\\Test1.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T07:07:31.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "WhenOpened": "2026-09-28T07:07:31.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "RentalCalculator.cs",
               "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RentalCalculator.cs",
               "RelativeDocumentMoniker": "lab3\\RentalCalculator.cs",
               "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RentalCalculator.cs",
               "RelativeToolTip": "lab3\\RentalCalculator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T06:58:19.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RealEstateRental.cs",
-              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RealEstateRental.cs",
-              "RelativeDocumentMoniker": "lab3\\RealEstateRental.cs",
-              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RealEstateRental.cs",
-              "RelativeToolTip": "lab3\\RealEstateRental.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T06:58:13.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Apartment.cs",
               "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\Apartment.cs",
               "RelativeDocumentMoniker": "lab3\\Apartment.cs",
               "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\Apartment.cs",
               "RelativeToolTip": "lab3\\Apartment.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T06:57:56.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "House.cs",
               "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\House.cs",
               "RelativeDocumentMoniker": "lab3\\House.cs",
               "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\House.cs",
               "RelativeToolTip": "lab3\\House.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T06:57:39.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RealEstateRental.cs",
+              "DocumentMoniker": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RealEstateRental.cs",
+              "RelativeDocumentMoniker": "lab3\\RealEstateRental.cs",
+              "ToolTip": "C:\\Users\\Sofia\\source\\repos\\lab3\\lab3\\RealEstateRental.cs",
+              "RelativeToolTip": "lab3\\RealEstateRental.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T06:58:13.105Z",
               "EditorCaption": ""
             }
           ]

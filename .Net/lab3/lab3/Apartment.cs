@@ -12,19 +12,9 @@ public class Apartment : RealEstateRental
         NumberOfRooms = rooms;
     }
 
-    public virtual decimal CalculateUtilities()
+    public override decimal CalculateUtilities()
     {
         const decimal utilityRatePerSquareMeter = 40m;
         return (decimal)TotalArea * utilityRatePerSquareMeter;
-    }
-
-    public override void Pay()
-    {
-        Console.WriteLine("Оренду квартири оплачено.");
-    }
-
-    public override void TerminateContract()
-    {
-        Console.WriteLine("Договір оренди квартири розірвано.");
     }
 }

@@ -12,7 +12,7 @@ public class House : RealEstateRental
         HasGarden = hasGarden;
     }
 
-    public virtual string EvaluateInfrastructure(
+    public override string EvaluateInfrastructure(
         bool publicTransportNearby,
         bool shopNearby,
         bool schoolNearby)
@@ -35,15 +35,5 @@ public class House : RealEstateRental
             1 => "Інфраструктура розвинена слабко.",
             _ => "Інфраструктура практично відсутня."
         };
-    }
-
-    public override void Pay()
-    {
-        Console.WriteLine("Оренду будинку оплачено.");
-    }
-
-    public override void TerminateContract()
-    {
-        Console.WriteLine("Договір оренди будинку розірвано.");
     }
 }

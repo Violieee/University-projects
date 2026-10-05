@@ -1,4 +1,5 @@
 using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace lab3.RealEstateRentalApp;
 
@@ -14,14 +15,24 @@ public abstract class RealEstateRental
         MonthlyPrice = monthlyPrice;
         TotalArea = totalArea;
     }
+    public virtual decimal CalculateUtilities()
+    {
+        return 0;
+    }
+
+    public virtual string EvaluateInfrastructure(
+        bool publicTransportNearby,
+        bool shopNearby,
+        bool schoolNearby)
+    {
+        return "";
+    }
 
     public virtual void Pay()
     {
-        Console.WriteLine("Оренду оплачено.");
     }
 
     public virtual void TerminateContract()
     {
-        Console.WriteLine("Договір оренди розірвано.");
     }
 }
