@@ -68,7 +68,7 @@ button{
     font-size: 24px;
 }
 
-.button, select {
+.button, select, input {
     background-color: rgb(102, 76, 175, 0.5);
     border: none;
     color: white;
