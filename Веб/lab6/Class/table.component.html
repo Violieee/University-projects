@@ -1,0 +1,77 @@
+<section class="flex">
+  <div class="content">
+    <h2>Завдання</h2>
+    <p>
+      Базовий клас: Стіл (поля: назва, площа S в см).
+      <br />
+      Метод: Вартість C = S² / 3 + k, де k - коефіцієнт.
+      <br />
+      Нащадок: Письмовий стіл (поля: використаний матеріал,
+      вартість обробки).
+      <br />
+      Зміни в нащадках: Знайти вартість обробки,
+      яка визначається як 10% від вартості,
+      і повну вартість.
+    </p>
+  </div>
+</section>
+
+<section class="flex">
+  <form class="flex flex-row flex-wrap">
+
+    <fieldset class="flex flex-column">
+      <legend>Стіл</legend>
+
+      <input type="text" value="Стіл"
+             id="name1" placeholder="Назва" #name1 />
+
+      <input type="number" value="100"
+             id="S1" min="0" placeholder="Площа S" #S1 />
+
+      <input type="number" value="10"
+             id="k1" placeholder="Коефіцієнт k" #k1 />
+
+    </fieldset>
+
+    <fieldset class="flex flex-column">
+      <legend>Письмовий стіл</legend>
+
+      <input type="text" value="Письмовий стіл"
+             id="name2" placeholder="Назва" #name2 />
+
+      <input type="number" value="150"
+             id="S2" min="0" placeholder="Площа S" #S2 />
+
+      <input type="text" value="Дерево"
+             id="material" placeholder="Матеріал" #material />
+
+      <input type="number" value="20"
+             id="k2" placeholder="Коефіцієнт k" #k2 />
+
+    </fieldset>
+  </form>
+
+  <button
+    type="button"
+    class="btn"
+    (click)="calcTables(name1.value, S1.value, k1.value,
+                        name2.value, S2.value,
+                        material.value, k2.value)">
+    <span>Розрахунок</span>
+  </button>
+</section>
+
+
+@if (table_show || writingtable_show) {
+  <section class="flex">
+    <h2 class="gradient-text">Результати обрахунків</h2>
+
+    <div class="flex">
+      <h3 class="gradient-text">Стіл</h3>
+      <h4>{{ table_show }}</h4>
+
+      <h3 class="gradient-text">Письмовий стіл</h3>
+      <h4>{{ writingtable_show }}</h4>
+    </div>
+  </section>
+}
