@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+body{background-color: #717dbc;}
+h1, h2, h3, h4, h5, h6, ul, p {
+    font-family: 'Neucha', cursive;
+    text-align: center;
+}
+
+header p {
+    font-size: 4vh;
+}
+
+ul
+{
+    font-size: 4vh;
+}
+
+.card {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 11px 19px;
+    margin: 0 10px;
+    animation: animate 35 linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff 0 0 200px #0072ff;
+}
+
+header.card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+@keyframes animate{
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate (360deg);
+    }
+}
