@@ -1,0 +1,41 @@
+section.projects
+  .projects__heading
+    div
+      h1 Інвестиційні проєкти
+      p Створюйте, плануйте, оцінюйте та контролюйте реалізацію інвестиційних проєктів.
+
+    button.create-button(type="button") + Створити проєкт
+
+  .tabs
+    button.tab.tab--active(type="button" data-filter="all" aria-pressed="true")
+      | Усі проєкти
+      span.tab__count 8
+
+    button.tab(type="button" data-filter="pending" aria-pressed="false")
+      | На затвердження
+      span.tab__count 3
+
+  .table-scroll
+    table.project-table
+      thead
+        tr
+          th Назва проєкту
+          th Прогрес
+          th Бюджет
+          th Дата початку
+          th Дата завершення
+
+      tbody
+        each project in projects
+          tr(data-status=project.status)
+            td= project.name
+
+            td
+              .progress
+                .progress__bar
+                  .progress__fill(style=`width: ${project.progress}%`)
+                span= project.progress + '%'
+
+            td= project.budget
+            td= project.start
+            td= project.end
