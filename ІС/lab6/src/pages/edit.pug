@@ -1,0 +1,188 @@
+include header.pug
+
+main.page
+  section.project-form
+    a.project-form__back(href="/project.html") ← Назад до проєкту
+
+    .project-form__heading
+      h1 Редагування інвестиційного проєкту
+      p Модернізація виробництва
+
+    form.project-form__content
+      h2 Основна інформація
+
+      .project-form__group
+        label(for="project-name") Назва проєкту
+        input#project-name(
+          type="text"
+          name="name"
+          value="Модернізація виробництва"
+          required
+        )
+
+      .project-form__group
+        label(for="project-description") Опис проєкту
+        textarea#project-description(
+          name="description"
+          rows="4"
+        ) Модернізація виробничого обладнання підприємства.
+
+      .project-form__row
+        .project-form__group
+          label(for="project-budget") Бюджет (грн)
+          input#project-budget(
+            type="number"
+            name="budget"
+            value="50000000"
+            min="0"
+            required
+          )
+
+        .project-form__group
+          label(for="project-manager") Керівник проєкту
+          input#project-manager(
+            type="text"
+            name="manager"
+            value="Іваненко Іван"
+          )
+
+      .project-form__row
+        .project-form__group
+          label(for="project-start") Дата початку
+          input#project-start(
+            type="date"
+            name="start"
+            value="2026-02-01"
+            required
+          )
+
+        .project-form__group
+          label(for="project-end") Дата завершення
+          input#project-end(
+            type="date"
+            name="end"
+            value="2026-12-31"
+            required
+          )
+
+      .project-form__group
+        label(for="project-files") Додати документи
+        input#project-files(
+          type="file"
+          name="documents"
+          multiple
+        )
+
+      h2 Планування етапів виконання
+
+      .project-form__table-wrapper
+        table.project-form__table
+          thead
+            tr
+              th Етап
+              th Дата початку
+              th Дата завершення
+              th Статус
+
+          tbody
+            tr
+              td Підготовка документації
+              td 01.02.2026
+              td 28.02.2026
+              td Завершено
+
+            tr
+              td Закупівля обладнання
+              td 01.03.2026
+              td 30.06.2026
+              td Завершено
+
+            tr
+              td Встановлення обладнання
+              td 01.07.2026
+              td 31.10.2026
+              td У процесі
+
+            tr
+              td Тестування та запуск
+              td 01.11.2026
+              td 31.12.2026
+              td Заплановано
+
+      h3 Новий етап
+
+      .project-form__group
+        label(for="stage-name") Назва етапу
+        input#stage-name(
+          type="text"
+          name="stageName"
+          placeholder="Введіть назву етапу"
+        )
+
+      .project-form__row
+        .project-form__group
+          label(for="stage-start") Дата початку етапу
+          input#stage-start(
+            type="date"
+            name="stageStart"
+          )
+
+        .project-form__group
+          label(for="stage-end") Дата завершення етапу
+          input#stage-end(
+            type="date"
+            name="stageEnd"
+          )
+
+      .project-form__group
+        label(for="stage-status") Статус етапу
+        select#stage-status(name="stageStatus")
+          option(value="planned") Заплановано
+          option(value="active") У процесі
+          option(value="completed") Завершено
+
+      button.project-form__secondary(type="button") Додати етап
+
+      h2 Поточний стан виконання
+
+      .project-form__row
+        .project-form__group
+          label(for="project-progress") Прогрес виконання (%)
+          input#project-progress(
+            type="number"
+            name="progress"
+            value="60"
+            min="0"
+            max="100"
+          )
+
+        .project-form__group
+          label(for="project-status") Статус проєкту
+          select#project-status(name="status")
+            option(value="draft") Чернетка
+            option(value="pending") На затвердження
+            option(value="active" selected) У процесі
+            option(value="completed") Завершено
+
+      h2 Погодження проєкту
+
+      .project-form__group
+        label(for="approval-status") Рішення
+        select#approval-status(name="approvalStatus")
+          option(value="pending") Очікує погодження
+          option(value="approved") Погоджено
+          option(value="revision") Повернути на доопрацювання
+
+      .project-form__group
+        label(for="approval-comment") Коментар до рішення
+        textarea#approval-comment(
+          name="approvalComment"
+          rows="4"
+          placeholder="Вкажіть коментар"
+        )
+
+      .project-form__actions
+        a.project-form__cancel(href="/project.html") Скасувати
+        button.project-form__submit(type="button") Зберегти зміни
+
+include footer.pug

@@ -1,0 +1,42 @@
+-
+  const currentRole = typeof role !== 'undefined' ? role : 'manager'
+
+header.site-header
+  .site-header__inner
+    a.brand(href=currentRole === 'employee' ? '/employee.html' : '/')
+      span.brand__logo IP
+      span.brand__title Система управління інвестиційними проєктами
+
+    label.search
+      span.sr-only Пошук проєктів
+      input#project-search(
+        type="search"
+        placeholder="Пошук проєктів..."
+      )
+
+    nav.role-switch(aria-label="Вибір ролі")
+      a.role-switch__link(
+        href="/"
+        class=currentRole === 'manager' ? 'role-switch__link--active' : ''
+        aria-current=currentRole === 'manager' ? 'page' : null
+      ) Менеджер
+
+      a.role-switch__link(
+        href="/employee.html"
+        class=currentRole === 'employee' ? 'role-switch__link--active' : ''
+        aria-current=currentRole === 'employee' ? 'page' : null
+      ) Працівник
+
+    .profile
+      span.profile__bell(aria-hidden="true") 🔔
+
+      if currentRole === 'manager'
+        span.profile__avatar(aria-hidden="true") ІА
+        .profile__details
+          strong Іваненко А. В.
+          small Менеджер
+      else
+        span.profile__avatar(aria-hidden="true") ПП
+        .profile__details
+          strong Петренко П. П.
+          small Працівник

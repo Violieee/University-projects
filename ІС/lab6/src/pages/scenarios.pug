@@ -1,0 +1,125 @@
+include header.pug
+
+main.page
+  section.scenarios
+    a.scenarios__back(href="/project.html") ← Назад до проєкту
+
+    .scenarios__heading
+      h1 Сценарне моделювання
+      p Модернізація виробництва
+
+    .scenarios__card
+      h2 Створення сценарію
+      p Вкажіть параметри альтернативного сценарію реалізації проєкту
+
+      form.scenarios__form
+        .scenarios__grid
+          .scenarios__field
+            label(for="scenario-name") Назва сценарію
+            input#scenario-name(
+              type="text"
+              name="name"
+              placeholder="Наприклад, Оптимістичний"
+            )
+
+          .scenarios__field
+            label(for="scenario-type") Тип сценарію
+            select#scenario-type(name="type")
+              option(value="optimistic") Оптимістичний
+              option(value="realistic") Базовий
+              option(value="pessimistic") Песимістичний
+
+          .scenarios__field
+            label(for="scenario-income") Річний дохід (грн)
+            input#scenario-income(
+              type="number"
+              name="income"
+              min="0"
+              placeholder="Введіть дохід"
+            )
+
+          .scenarios__field
+            label(for="scenario-expenses") Річні витрати (грн)
+            input#scenario-expenses(
+              type="number"
+              name="expenses"
+              min="0"
+              placeholder="Введіть витрати"
+            )
+
+          .scenarios__field
+            label(for="scenario-investment") Інвестиції (грн)
+            input#scenario-investment(
+              type="number"
+              name="investment"
+              min="0"
+              placeholder="Введіть суму інвестицій"
+            )
+
+          .scenarios__field
+            label(for="scenario-duration") Тривалість (років)
+            input#scenario-duration(
+              type="number"
+              name="duration"
+              min="1"
+              placeholder="Введіть кількість років"
+            )
+
+        .scenarios__actions
+          button.scenarios__button(type="button") Додати сценарій
+
+    .scenarios__card
+      h2 Порівняння сценаріїв
+      p Приклад порівняння трьох варіантів реалізації проєкту
+
+      .scenarios__table-wrapper
+        table.scenarios__table
+          thead
+            tr
+              th Показник
+              th Оптимістичний
+              th Базовий
+              th Песимістичний
+
+          tbody
+            tr
+              td Початкові інвестиції
+              td 45 млн грн
+              td 50 млн грн
+              td 55 млн грн
+
+            tr
+              td Річний дохід
+              td 25 млн грн
+              td 20 млн грн
+              td 15 млн грн
+
+            tr
+              td Річні витрати
+              td 8 млн грн
+              td 10 млн грн
+              td 12 млн грн
+
+            tr
+              td Тривалість
+              td 5 років
+              td 5 років
+              td 5 років
+
+            tr
+              td NPV
+              td —
+              td —
+              td —
+
+            tr
+              td IRR
+              td —
+              td —
+              td —
+
+      p.scenarios__note
+        | Значення наведені для демонстрації інтерфейсу.
+        | Розрахунки NPV та IRR будуть реалізовані пізніше.
+
+include footer.pug

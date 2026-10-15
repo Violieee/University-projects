@@ -1,0 +1,56 @@
+include header.pug
+
+section.project-details
+  .project-details__top
+    a.project-details__back(href="/")
+      | ← Назад до проєктів
+
+    h1 Модернізація виробництва
+
+    p.project-details__description
+      | Детальна інформація про інвестиційний проєкт
+
+  .project-details__grid
+    .project-details__card
+      h2 Загальна інформація
+
+      .project-details__field
+        span Назва проєкту
+        strong Модернізація виробництва
+
+      .project-details__field
+        span Статус
+        strong У процесі
+
+      .project-details__field
+        span Прогрес виконання
+        strong 60%
+
+    .project-details__card
+      h2 Фінансова інформація
+
+      .project-details__field
+        span Запланований бюджет
+        strong 50 000 000 грн
+
+      .project-details__field
+        span Фактичні витрати
+        strong 30 000 000 грн
+
+    .project-details__card
+      h2 Терміни реалізації
+
+      .project-details__field
+        span Дата початку
+        strong 01.02.2026
+
+      .project-details__field
+        span Дата завершення
+        strong 31.12.2026
+
+  .project-details__actions
+    a.button(href="/edit.html") Редагувати проєкт
+    a.button.button--primary(href="/evaluation.html") Оцінити проєкт
+    a.button(href="/scenarios.html") Сценарне моделювання
+
+include footer.pug

@@ -1,0 +1,128 @@
+include header.pug
+
+main.page
+  section.evaluation
+    a.evaluation__back(href="/project.html") ← Назад до проєкту
+
+    .evaluation__heading
+      h1 Оцінювання інвестиційного проєкту
+      p Модернізація виробництва
+
+    form.evaluation__form
+
+      .evaluation__card
+        h2 Фінансові дані
+        p Введіть прогнозовані фінансові показники проєкту
+
+        .evaluation__grid
+          .evaluation__field
+            label(for="investment") Початкові інвестиції (грн)
+            input#investment(
+              type="number"
+              name="investment"
+              value="50000000"
+              min="0"
+            )
+
+          .evaluation__field
+            label(for="income") Прогнозований річний дохід (грн)
+            input#income(
+              type="number"
+              name="income"
+              placeholder="Введіть дохід"
+              min="0"
+            )
+
+          .evaluation__field
+            label(for="expenses") Прогнозовані річні витрати (грн)
+            input#expenses(
+              type="number"
+              name="expenses"
+              placeholder="Введіть витрати"
+              min="0"
+            )
+
+          .evaluation__field
+            label(for="discount") Ставка дисконтування (%)
+            input#discount(
+              type="number"
+              name="discount"
+              placeholder="Наприклад, 12"
+              min="0"
+              step="0.1"
+            )
+
+          .evaluation__field
+            label(for="duration") Тривалість проєкту (років)
+            input#duration(
+              type="number"
+              name="duration"
+              placeholder="Введіть кількість років"
+              min="1"
+            )
+
+      .evaluation__card
+        h2 Показники ефективності
+        p Результати фінансового оцінювання проєкту
+
+        .evaluation__results
+          .evaluation__result
+            span NPV — чиста приведена вартість
+            strong — грн
+
+          .evaluation__result
+            span IRR — внутрішня норма дохідності
+            strong — %
+
+          .evaluation__result
+            span PI — індекс прибутковості
+            strong —
+
+          .evaluation__result
+            span Термін окупності
+            strong — років
+
+        p.evaluation__note
+          | Показники розраховуватимуться після реалізації логіки системи.
+
+      .evaluation__card
+        h2 Оцінювання ризиків
+        p Визначте основні ризики інвестиційного проєкту
+
+        .evaluation__grid
+          .evaluation__field
+            label(for="risk-type") Категорія ризику
+            select#risk-type(name="riskType")
+              option(value="financial") Фінансовий
+              option(value="technical") Технічний
+              option(value="market") Ринковий
+              option(value="organizational") Організаційний
+
+          .evaluation__field
+            label(for="risk-level") Рівень ризику
+            select#risk-level(name="riskLevel")
+              option(value="low") Низький
+              option(value="medium") Середній
+              option(value="high") Високий
+
+        .evaluation__field
+          label(for="risk-description") Опис ризику
+          textarea#risk-description(
+            name="riskDescription"
+            rows="4"
+            placeholder="Опишіть можливий ризик"
+          )
+
+        .evaluation__field
+          label(for="risk-actions") Заходи з мінімізації ризику
+          textarea#risk-actions(
+            name="riskActions"
+            rows="3"
+            placeholder="Вкажіть можливі заходи"
+          )
+
+      .evaluation__actions
+        a.evaluation__cancel(href="/project.html") Скасувати
+        button.evaluation__submit(type="button") Зберегти оцінювання
+
+include footer.pug

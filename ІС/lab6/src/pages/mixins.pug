@@ -1,0 +1,27 @@
+mixin tab(title, filter, count, active)
+  button.tab(
+    type="button"
+    class=active ? 'tab--active' : ''
+    data-filter=filter
+    aria-pressed=active ? 'true' : 'false'
+  )
+    | #{title}
+    span.tab__count= count
+
+mixin projectRow(project)
+  tr(data-status=project.status)
+    td
+      if project.name === 'Модернізація виробництва'
+        a(href="/project.html")= project.name
+      else
+        = project.name
+
+    td
+      .progress
+        .progress__bar
+          .progress__fill(style=`width: ${project.progress}%`)
+        span= project.progress + '%'
+
+    td= project.budget
+    td= project.start
+    td= project.end
