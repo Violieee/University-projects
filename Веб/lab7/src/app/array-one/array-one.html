@@ -1,0 +1,38 @@
+<section class="lab-task">
+  <h2>Одновимірний масив — варіант 18</h2>
+
+  <p>
+    Введіть 10 цілих чисел.
+    Програма знайде суму додатних елементів.
+  </p>
+
+  <label for="numbers">Елементи масиву:</label>
+
+  <input
+    id="numbers"
+    #numbersInput
+    type="text"
+    placeholder="5, -3, 8, -2, 4, 0, -7, 10, -1, 6"
+  />
+
+  <button
+    type="button"
+    (click)="calculate(numbersInput.value)">
+    Обчислити
+  </button>
+
+  @if (error) {
+    <p class="lab-error">{{ error }}</p>
+  }
+
+  @if (sum !== null) {
+    <h3>Результат</h3>
+
+    <p>Масив: {{ numbers.join(', ') }}</p>
+
+    <p>
+      Сума додатних елементів:
+      <strong>{{ sum }}</strong>
+    </p>
+  }
+</section>

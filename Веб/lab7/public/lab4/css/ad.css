@@ -1,0 +1,22 @@
+.ad {
+    width: calc(100% - var(--width-menu));
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../img/ad.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ad_text {
+    padding: 20px;
+
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-h1);
+    color: white;
+
+    text-align: center;
+}

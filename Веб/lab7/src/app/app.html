@@ -1,0 +1,19 @@
+<div class="app-container">
+
+  <app-header></app-header>
+
+  <nav class="top-nav">
+    <a
+      routerLink="/"
+      routerLinkActive="on-home"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="home-link">
+      ← На головну
+    </a>
+  </nav>
+
+  <main class="lab-content">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>

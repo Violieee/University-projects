@@ -1,0 +1,53 @@
+<section class="lab-task">
+  <h2>Двовимірний масив — варіант 18</h2>
+
+  <p>
+    Введіть 10 чисел a та 20 чисел b.
+    Матриця C обчислюється за формулою:
+    C[i,j] = a[j] / (1 + |b[i]|).
+  </p>
+
+  <label for="a">Числа a (10 значень):</label>
+
+  <textarea
+    id="a"
+    #a
+    rows="3"
+    placeholder="1, 2, 3, 4, 5, 6, 7, 8, 9, 10">
+  </textarea>
+
+  <label for="b">Числа b (20 значень):</label>
+
+  <textarea
+    id="b"
+    #b
+    rows="3"
+    placeholder="0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19">
+  </textarea>
+
+  <button
+    type="button"
+    (click)="calculate(a.value, b.value)">
+    Створити матрицю
+  </button>
+
+  @if (error) {
+    <p class="lab-error">{{ error }}</p>
+  }
+
+  @if (matrix.length) {
+    <h3>Матриця C (20 × 10)</h3>
+
+    <div class="matrix-wrap">
+      <table>
+        @for (row of matrix; track $index) {
+          <tr>
+            @for (value of row; track $index) {
+              <td>{{ value.toFixed(3) }}</td>
+            }
+          </tr>
+        }
+      </table>
+    </div>
+  }
+</section>
