@@ -1,12 +1,15 @@
 using System.Collections.ObjectModel;
 using lab5.Core.Comparers;
+using System.Linq;
 using lab5.Core.FileStorage;
 using lab5.Core.Filters;
 using lab5.Core.Models;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace lab5.Core.Services;
 
-public class Bank
+public class Bank : IEnumerable<Depositor>
 {
     private readonly IFileSaver _fileSaver;
     private readonly IFileLoader _fileLoader;
@@ -61,15 +64,29 @@ public class Bank
 
     public List<Depositor> GetCurrentYearDepositors() =>
         _currentYearFilter.Filter(_deposits, DateTime.Now.Year);
-
+    //LINQ
     public List<Depositor> SortByAmount(IEnumerable<Depositor> list)
     {
         ArgumentNullException.ThrowIfNull(list);
-        var sorted = list.ToList();
-        sorted.Sort(new AmountComparer());
-        return sorted;
+        return list.OrderBy(d => d, new AmountComparer()).ToList();
     }
+    public List<string> GetDepositorNames() =>
+        _deposits.Select(d => d.FullName).ToList();
 
+    public List<DepositSummary> GetDepositSummaries() =>
+        _deposits.Select(d => new DepositSummary(d.FullName, d.Amount)).ToList();
+
+    public List<YearDepositGroup> GroupDepositorsByYear() =>
+        _deposits.GroupBy(d => d.YearOpened)
+            .OrderBy(g => g.Key)
+            .Select(g => new YearDepositGroup(g.Key, g.Count(), g.Sum(d => d.Amount)))
+            .ToList();
+
+    public decimal GetTotalDepositAmount() => _deposits.Sum(d => d.Amount);
+
+    public decimal GetAverageDepositAmount() =>
+        _deposits.Select(d => d.Amount).DefaultIfEmpty(0m).Average();
+    //LINQ
     public void FilterByYear(int year)
     {
         if (year < 1900 || year > DateTime.Now.Year)
@@ -127,5 +144,15 @@ public class Bank
         Deposits.Clear();
         foreach (Depositor depositor in items)
             Deposits.Add(depositor);
+    }
+
+    public IEnumerator<Depositor> GetEnumerator()
+    {
+        return _deposits.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
     }
 }

@@ -4,12 +4,11 @@
         Title="Вкладники банку" Height="600" Width="900"
         MinWidth="850" MinHeight="480"
         WindowStartupLocation="CenterScreen" Language="uk-UA">
-    <!-- Структура інтерфейсу відповідає прикладу з лабораторної:
-         блок введення -> кнопка додавання -> таблиця -> нижні кнопки. -->
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
@@ -62,6 +61,17 @@
             <Button x:Name="SortByAmountButton" Content="Сортувати за сумою" Margin="4" Padding="5,2" Click="SortByAmountButton_Click" />
             <Button x:Name="LoadButton" Content="Завантажити" Margin="4" Padding="5,2" Click="LoadButton_Click" />
             <Button x:Name="SaveButton" Content="Зберегти" Margin="4" Padding="5,2" Click="SaveButton_Click" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Margin="5,4,5,0">
+            <TextBlock Text="LINQ-аналіз вкладників" FontWeight="Bold" Margin="0,0,0,4" />
+            <WrapPanel>
+                <Button Content="Імена" Click="NamesButton_Click" Margin="0,0,5,5" Padding="7,3" />
+                <Button Content="Вкладники та суми" Click="SummariesButton_Click" Margin="0,0,5,5" Padding="7,3" />
+                <Button Content="Групи за роками" Click="GroupsButton_Click" Margin="0,0,5,5" Padding="7,3" />
+                <Button Content="Загальна сума" Click="TotalButton_Click" Margin="0,0,5,5" Padding="7,3" />
+                <Button Content="Середній вклад" Click="AverageButton_Click" Margin="0,0,5,5" Padding="7,3" />
+            </WrapPanel>
         </StackPanel>
     </Grid>
 </Window>

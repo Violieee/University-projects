@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Globalization;
 using System.Windows;
 using lab5.Core.FileStorage;
@@ -141,6 +142,28 @@ public partial class MainWindow : Window
             LoadButton.IsEnabled = true;
         }
     }
+
+    private void NamesButton_Click(object sender, RoutedEventArgs e) =>
+        ShowLinqResult("Імена вкладників", string.Join("\n", _bank.GetDepositorNames()));
+
+    private void SummariesButton_Click(object sender, RoutedEventArgs e) =>
+        ShowLinqResult("Вкладники та суми", string.Join("\n",
+            _bank.GetDepositSummaries().Select(d => $"{d.FullName}: {d.Amount:N2} грн")));
+
+    private void GroupsButton_Click(object sender, RoutedEventArgs e) =>
+        ShowLinqResult("Групування за роками", string.Join("\n",
+            _bank.GroupDepositorsByYear().Select(g =>
+                $"{g.Year}: {g.DepositorCount} вкладників, {g.TotalAmount:N2} грн")));
+
+    private void TotalButton_Click(object sender, RoutedEventArgs e) =>
+        ShowLinqResult("Загальна сума вкладів", $"{_bank.GetTotalDepositAmount():N2} грн");
+
+    private void AverageButton_Click(object sender, RoutedEventArgs e) =>
+        ShowLinqResult("Середня сума вкладу", $"{_bank.GetAverageDepositAmount():N2} грн");
+
+    private static void ShowLinqResult(string title, string result) =>
+        MessageBox.Show(string.IsNullOrEmpty(result) ? "Немає даних." : result,
+            title, MessageBoxButton.OK, MessageBoxImage.Information);
 
     private static bool TryReadAmount(string text, out decimal amount)
     {
