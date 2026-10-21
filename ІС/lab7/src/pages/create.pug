@@ -1,0 +1,142 @@
+include header.pug
+
+main.page
+  section.project-form
+    a.project-form__back(href="/") ← Назад до проєктів
+
+    .project-form__heading
+      h1 Створення інвестиційного проєкту
+      p Заповніть основну інформацію про новий проєкт
+
+    form.project-form__content
+      h2 Основна інформація
+
+      .project-form__group
+        label(for="project-name") Назва проєкту
+        input#project-name(
+          type="text"
+          name="name"
+          placeholder="Введіть назву проєкту"
+          required
+        )
+
+      .project-form__group
+        label(for="project-description") Опис проєкту
+        textarea#project-description(
+          name="description"
+          rows="4"
+          placeholder="Введіть опис проєкту"
+        )
+
+      .project-form__row
+        .project-form__group
+          label(for="project-budget") Бюджет (грн)
+          input#project-budget(
+            type="number"
+            name="budget"
+            placeholder="Введіть бюджет"
+            min="0"
+            required
+          )
+
+        .project-form__group
+          label(for="project-status") Статус проєкту
+          select#project-status(name="status")
+            option(value="draft" selected) Чернетка
+            option(value="pending") На затвердження
+            option(value="active") У процесі
+
+      .project-form__row
+        .project-form__group
+          label(for="project-start") Дата початку
+          input#project-start(
+            type="date"
+            name="start"
+            required
+          )
+
+        .project-form__group
+          label(for="project-end") Дата завершення
+          input#project-end(
+            type="date"
+            name="end"
+            required
+          )
+
+      .project-form__group
+        label(for="project-manager") Керівник проєкту
+        input#project-manager(
+          type="text"
+          name="manager"
+          placeholder="ПІБ керівника"
+        )
+
+      .project-form__group
+        label(for="project-files") Документи проєкту
+        input#project-files(
+          type="file"
+          name="documents"
+          multiple
+        )
+
+      h2 Планування етапів виконання
+
+      p.project-form__hint
+        | Додайте основні етапи реалізації інвестиційного проєкту.
+
+      .project-form__table-wrapper
+        table.project-form__table
+          thead
+            tr
+              th Назва етапу
+              th Дата початку
+              th Дата завершення
+              th Статус
+
+          tbody
+            tr
+              td(colspan="4") Етапи ще не додано
+
+      h3 Новий етап
+
+      .project-form__group
+        label(for="stage-name") Назва етапу
+        input#stage-name(
+          type="text"
+          name="stageName"
+          placeholder="Наприклад, Закупівля обладнання"
+        )
+
+      .project-form__row
+        .project-form__group
+          label(for="stage-start") Дата початку етапу
+          input#stage-start(
+            type="date"
+            name="stageStart"
+          )
+
+        .project-form__group
+          label(for="stage-end") Дата завершення етапу
+          input#stage-end(
+            type="date"
+            name="stageEnd"
+          )
+
+      .project-form__group
+        label(for="stage-status") Статус етапу
+        select#stage-status(name="stageStatus")
+          option(value="planned" selected) Заплановано
+          option(value="active") У процесі
+          option(value="completed") Завершено
+
+      button.project-form__secondary(
+        type="button"
+      ) + Додати етап
+
+      .project-form__actions
+        a.project-form__cancel(href="/") Скасувати
+        button.project-form__submit(
+          type="button"
+        ) Створити проєкт
+
+include footer.pug

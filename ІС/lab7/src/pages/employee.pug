@@ -1,0 +1,80 @@
+-
+  const role = 'employee'
+  const employeeProjects = [
+    {
+      name: 'Екологічна ініціатива',
+      progress: 100,
+      budget: '20 млн грн',
+      start: '01.02.2026',
+      end: '10.10.2026',
+      status: 'approved'
+    },
+    {
+      name: 'Цифрова трансформація',
+      progress: 15,
+      budget: '40 млн грн',
+      start: '15.03.2026',
+      end: '31.12.2026',
+      status: 'approved'
+    },
+    {
+      name: 'Розширення ринку збуту',
+      progress: 40,
+      budget: '30 млн грн',
+      start: '10.02.2026',
+      end: '30.11.2026',
+      status: 'pending'
+    },
+
+  ]
+
+include mixins.pug
+include header.pug
+
+main.page
+  section.projects
+    .projects__heading
+      div
+        h1 Мої інвестиційні проєкти
+        p Переглядайте погоджені проєкти та заявки, які очікують погодження.
+
+      a.create-button(href="/create.html") + Створити проєкт
+
+    .tabs
+      .tab.tab--active
+        | Мої проєкти
+        span.tab__count 3
+
+    .table-scroll
+      table.project-table
+        thead
+          tr
+            th Назва проєкту
+            th Прогрес
+            th Бюджет
+            th Дата початку
+            th Дата завершення
+            th Статус погодження
+
+        tbody
+          each project in employeeProjects
+            tr
+              td= project.name
+
+              td
+                .progress
+                  .progress__bar
+                    .progress__fill(style=`width: ${project.progress}%`)
+                  span= project.progress + '%'
+
+              td= project.budget
+              td= project.start
+              td= project.end
+
+              td
+                if project.status === 'approved'
+                  span.status-badge.status-badge--approved Погоджено
+                else
+                  span.status-badge.status-badge--pending Очікує погодження
+
+include footer.pug

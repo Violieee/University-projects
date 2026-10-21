@@ -1,0 +1,389 @@
+$white: #fff;
+$light-green: #e8f5e9;
+$green: #a5d6a7;
+$green-hover: #81c784;
+$gray: #616161;
+$dark: #212121;
+$border: #d6e4d8;
+$link: #397a40;
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: $light-green;
+  color: $dark;
+}
+
+a {
+  color: $link;
+  &:hover { color: #285c2e; }
+}
+
+input, select, textarea, button { font: inherit; }
+input, select, textarea {
+  &:focus-visible { outline: 2px solid $green; outline-offset: 1px; }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.site-header {
+  background: $white;
+  border-bottom: 1px solid $border;
+
+  &__inner {
+    max-width: 1240px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+.brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  color: $dark;
+  text-decoration: none;
+
+  &__logo {
+    padding: 12px;
+    background: $green;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  &__title { font-size: 15px; font-weight: bold; }
+}
+
+.search {
+  flex: 1;
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $border;
+    border-radius: 8px;
+  }
+}
+
+.role-switch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  background: $light-green;
+  border-radius: 10px;
+
+  &__link {
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: $dark;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+
+    &:hover { background: #d4ead6; color: $dark; }
+    &--active { background: $green; font-weight: bold; }
+    &--active:hover { background: $green-hover; }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__avatar { padding: 12px; background: $light-green; border-radius: 50%; }
+  &__details { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+}
+
+.page { max-width: 1240px; margin: auto; padding: 35px 20px; }
+
+.projects {
+  padding: 30px;
+  background: $white;
+  border-radius: 12px;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 { font-size: 28px; margin: 0 0 12px; }
+  p { color: $gray; margin: 0; }
+}
+
+.create-button,
+.project-form__submit,
+.project-form__secondary,
+.evaluation__submit,
+.scenarios__button,
+.action-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: $green;
+  color: $dark;
+  border: 1px solid $green;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .2s;
+
+  &:hover { background: $green-hover; color: $dark; }
+}
+
+.create-button { white-space: nowrap; }
+.project-form__secondary { margin-bottom: 12px; }
+
+.tabs { display: flex; gap: 15px; margin: 30px 0 20px; flex-wrap: wrap; }
+
+.tab {
+  padding: 12px 18px;
+  border: 1px solid $border;
+  background: $white;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &--active { background: $light-green; border-color: $green; font-weight: bold; }
+  &__count { margin-left: 8px; color: $gray; }
+}
+
+.table-scroll, .project-form__table-wrapper, .scenarios__table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.project-table, .project-form__table, .scenarios__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+
+  th, td { padding: 16px; border-bottom: 1px solid $border; }
+  th { background: $light-green; font-weight: 600; }
+  tbody tr:hover { background: #f7faf7; }
+}
+
+.project-table { min-width: 800px; }
+.project-form__table { min-width: 600px; th, td { padding: 14px; font-size: 14px; } }
+.scenarios__table { min-width: 650px; td:first-child { font-weight: 500; } }
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__bar { width: 110px; height: 12px; background: #e0e0e0; border-radius: 6px; overflow: hidden; }
+  &__fill { height: 100%; background: $green; border-radius: 6px; }
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  &--approved { background: $light-green; color: #285c2e; }
+  &--pending { background: #fff3d6; color: #8a5a00; }
+}
+
+.site-footer {
+  background: $dark;
+  color: $white;
+  padding: 25px;
+  text-align: center;
+  p { margin: 5px 0; }
+}
+
+.project-details, .project-form, .evaluation, .scenarios {
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.project-details { max-width: 1200px; }
+.project-form { max-width: 900px; }
+.evaluation, .scenarios { max-width: 1100px; }
+
+.project-details__back, .project-form__back, .evaluation__back, .scenarios__back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: $link;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+.project-details__top, .project-form__heading, .evaluation__heading, .scenarios__heading {
+  margin-bottom: 30px;
+  h1 { font-size: 28px; margin: 0 0 10px; }
+}
+
+.project-details__description,
+.project-form__heading p,
+.evaluation__heading p,
+.scenarios__heading p,
+.project-form__hint { color: $gray; }
+
+.project-details__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-details__card,
+.project-form__content,
+.evaluation__card,
+.scenarios__card {
+  background: $white;
+  border: 1px solid $border;
+  border-radius: 12px;
+}
+
+.project-details__card {
+  padding: 24px;
+  h2 { font-size: 18px; margin: 0 0 20px; }
+}
+
+.project-details__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  span { color: $gray; font-size: 14px; }
+  strong { font-size: 16px; }
+}
+
+.project-details__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+
+  .button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid $green;
+    border-radius: 8px;
+    background: $light-green;
+    color: $dark;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover { background: $green; color: $dark; }
+  }
+}
+
+.project-form__content {
+  padding: 32px;
+
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $border;
+    &:first-child { margin-top: 0; }
+  }
+  h3 { font-size: 16px; margin: 24px 0 18px; }
+}
+
+.project-form__row, .evaluation__grid, .evaluation__results, .scenarios__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-form__group, .evaluation__field, .scenarios__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+
+  label { font-size: 14px; font-weight: 600; }
+  input, select, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid $border;
+    border-radius: 8px;
+    background: $white;
+  }
+  textarea { resize: vertical; }
+}
+
+.project-form__table-wrapper { margin-bottom: 28px; }
+.project-form__hint { font-size: 14px; margin-bottom: 20px; }
+
+.project-form__actions, .evaluation__actions, .scenarios__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.project-form__cancel, .evaluation__cancel {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid $border;
+  border-radius: 8px;
+  color: $dark;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover { background: $light-green; color: $dark; }
+}
+
+.evaluation__card, .scenarios__card {
+  padding: 28px;
+  margin-bottom: 24px;
+  h2 { font-size: 20px; margin: 0 0 10px; }
+  > p { color: $gray; margin-bottom: 22px; }
+}
+
+.evaluation__result {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid $border;
+  border-radius: 10px;
+  span { color: $gray; font-size: 14px; }
+  strong { font-size: 22px; }
+}
+
+.evaluation__note, .scenarios__note { font-size: 13px; margin-top: 20px; }
+.evaluation__actions { margin-bottom: 32px; }
+
+@media (max-width: 768px) {
+  .site-header__inner { flex-direction: column; align-items: stretch; }
+  .brand, .search { flex: auto; }
+  .role-switch {
+    width: 100%;
+    justify-content: center;
+    &__link { flex: 1; text-align: center; }
+  }
+  .profile { justify-content: center; }
+  .page { padding: 20px 12px; }
+  .projects {
+    padding: 18px;
+    &__heading { flex-direction: column; align-items: stretch; }
+    h1 { font-size: 23px; }
+  }
+  .create-button { width: 100%; text-align: center; }
+  .project-details, .project-form, .evaluation, .scenarios { padding: 16px; }
+  .project-details__grid, .project-form__row,
+  .evaluation__grid, .evaluation__results, .scenarios__grid {
+    grid-template-columns: 1fr;
+  }
+  .project-form__row, .scenarios__grid { gap: 0; }
+  .project-form__content, .evaluation__card, .scenarios__card { padding: 20px; }
+  .project-form__actions, .evaluation__actions { flex-wrap: wrap; }
+}

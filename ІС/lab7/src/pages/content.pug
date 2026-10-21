@@ -1,0 +1,25 @@
+section.projects
+  .projects__heading
+    div
+      h1 Інвестиційні проєкти
+      p Створюйте, плануйте, оцінюйте та контролюйте реалізацію інвестиційних проєктів.
+
+    a.create-button(href="/create.html") + Створити проєкт
+
+  .tabs
+    +tab('Усі проєкти', 'all', 8, true)
+    +tab('На затвердження', 'pending', 3, false)
+
+  .table-scroll
+    table.project-table
+      thead
+        tr
+          th Назва проєкту
+          th Прогрес
+          th Бюджет
+          th Дата початку
+          th Дата завершення
+
+      tbody
+        each project in projects
+          +projectRow(project)
