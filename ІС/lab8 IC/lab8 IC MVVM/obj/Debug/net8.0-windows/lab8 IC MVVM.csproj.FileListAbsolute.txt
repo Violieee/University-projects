@@ -1,0 +1,19 @@
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\bin\Debug\net8.0-windows\lab8 IC MVVM.exe
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\bin\Debug\net8.0-windows\lab8 IC MVVM.deps.json
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\bin\Debug\net8.0-windows\lab8 IC MVVM.runtimeconfig.json
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\bin\Debug\net8.0-windows\lab8 IC MVVM.dll
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\bin\Debug\net8.0-windows\lab8 IC MVVM.pdb
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM_MarkupCompile.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.g.resources
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.AssemblyInfoInputs.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.AssemblyInfo.cs
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.csproj.CoreCompileInputs.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.dll
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\refint\lab8 IC MVVM.dll
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.pdb
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\lab8 IC MVVM.genruntimeconfig.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC MVVM\obj\Debug\net8.0-windows\ref\lab8 IC MVVM.dll

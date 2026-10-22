@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "lab8 IC MVVM/1.0.0": {
+        "runtime": {
+          "lab8 IC MVVM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lab8 IC MVVM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

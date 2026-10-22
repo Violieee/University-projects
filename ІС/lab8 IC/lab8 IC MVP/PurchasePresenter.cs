@@ -1,4 +1,4 @@
-﻿using Lab8_IC_MVP;
+﻿using lab8_IC_MVP;
 using System;
 using System.Collections.Generic;
 using System.Linq;
