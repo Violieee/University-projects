@@ -1,0 +1,16 @@
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\bin\Debug\net8.0-windows\lab8 IC.exe
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\bin\Debug\net8.0-windows\lab8 IC.deps.json
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\bin\Debug\net8.0-windows\lab8 IC.runtimeconfig.json
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\bin\Debug\net8.0-windows\lab8 IC.dll
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\bin\Debug\net8.0-windows\lab8 IC.pdb
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8_IC.Form1.resources
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.csproj.GenerateResource.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.AssemblyInfoInputs.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.AssemblyInfo.cs
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.csproj.CoreCompileInputs.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.dll
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\refint\lab8 IC.dll
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.pdb
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\lab8 IC.genruntimeconfig.cache
+C:\Users\Sofia\source\repos\lab8 IC\lab8 IC\obj\Debug\net8.0-windows\ref\lab8 IC.dll

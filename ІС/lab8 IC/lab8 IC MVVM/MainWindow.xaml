@@ -1,0 +1,46 @@
+﻿<Window x:Class="lab8_IC_MVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Розрахунок вартості покупки - MVVM"
+        Height="380"
+        Width="480"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="25">
+        <StackPanel>
+
+            <TextBlock Text="Розрахунок вартості покупки"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,25"/>
+
+            <TextBlock Text="Ціна без знижки:"/>
+            <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}"
+                     Height="30"
+                     Margin="0,5,0,15"/>
+
+            <TextBlock Text="Знижка та бонуси:"/>
+            <TextBox Text="{Binding Discount, UpdateSourceTrigger=PropertyChanged}"
+                     Height="30"
+                     Margin="0,5,0,15"/>
+
+            <TextBlock Text="Податки:"/>
+            <TextBox Text="{Binding Taxes, UpdateSourceTrigger=PropertyChanged}"
+                     Height="30"
+                     Margin="0,5,0,20"/>
+
+            <TextBlock Text="Підсумкова вартість покупки:"
+                       FontWeight="Bold"
+                       FontSize="16"/>
+
+            <TextBlock Text="{Binding Total, StringFormat={}{0:F2} грн}"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       Foreground="Green"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,0"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

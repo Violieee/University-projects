@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lab8_IC_MVP
+{
+    internal interface IPurchaseView
+    {
+        void DisplayResult(double total);
+    }
+}
