@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    z-index: 50;
+}
+
+.menu_list a {
+    transition: color 0.2s, transform 0.2s, text-shadow 0.2s;
+}
+
+.menu_list a:hover,
+.menu_list a:focus-visible {
+    color: #fff4dd;
+    transform: translateX(-5px) scale(1.04);
+}
+
+.menu_button {
+    border: 0;
+    background: transparent;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .social-link {
+    font-size: clamp(18px, 2vw, 23px);
+}
+
+.main img {
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+    .menu_button {
+        display: block;
+        position: fixed;
+        top: 7px;
+        right: 7px;
+        margin: 0;
+        width: 45px;
+        height: 45px;
+        z-index: 1002;
+        background: #e6c9a7;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .menu_button > span {
+        left: 8px;
+        top: 21px;
+    }
+
+    .menu_list.is-open {
+        display: flex;
+    }
+
+    .menu_button.is-open > span {
+        transform: rotate(45deg);
+    }
+
+    .menu_button.is-open > span::before {
+        top: 0;
+    }
+
+    .menu_button.is-open > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .header {
+        padding-top: 70px;
+    }
+
+    .main section {
+        padding: 22px 10px;
+    }
+
+    .footer .social-links {
+        gap: 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    :root {
+        --width-menu: 245px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .menu_list a {
+        transition: none;
+    }
+}
+
+.ad {
+    background-image: url('/img/banner.png');
+}
+
+.photo_text {
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.photo_card:hover .photo_text,
+.photo_card:focus-within .photo_text {
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .photo_text {
+        opacity: 1;
+        inset: auto 0 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.58);
+    }
+}

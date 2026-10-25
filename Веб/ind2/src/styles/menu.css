@@ -1,0 +1,166 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: max(0px, calc((100vw - var(--width-site)) / 2));
+
+    width: var(--width-menu);
+    height: 100vh;
+    height: 100dvh;
+
+    text-align: center;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+
+    height: 100%;
+    margin: 0;
+    padding: 12px 8px;
+    overflow-y: auto;
+
+    list-style: none;
+}
+
+.menu_list a {
+    display: block;
+
+    color: var(--color-brown);
+
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-menu);
+
+    text-decoration: none;
+}
+
+.menu_list a:hover,
+.menu_list a:focus-visible {
+    color: var(--color-light-brown);
+}
+
+.menu_toggle,
+.menu_button {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .menu {
+        width: 100%;
+        height: auto;
+
+        right: 0;
+
+        z-index: 1000;
+    }
+
+    .menu_button {
+        display: block;
+        position: relative;
+
+        width: 30px;
+        height: 30px;
+
+        margin: 20px;
+
+        cursor: pointer;
+
+        z-index: 1001;
+    }
+
+    .menu_button > span,
+    .menu_button > span::before,
+    .menu_button > span::after {
+        display: block;
+        position: absolute;
+
+        width: 30px;
+        height: 3px;
+
+        background-color: #000000;
+
+        transition: 0.25s;
+    }
+
+    .menu_button > span {
+        top: 13px;
+    }
+
+    .menu_button > span::before {
+        content: "";
+        top: -8px;
+    }
+
+    .menu_button > span::after {
+        content: "";
+        top: 8px;
+    }
+
+    .menu_list {
+        display: none;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: clamp(8px, 1.8vh, 16px);
+        justify-content: flex-start;
+
+        margin: 0;
+        padding: 72px 16px 24px;
+
+        overflow-y: auto;
+        overscroll-behavior: contain;
+
+        background-color: var(--color-green);
+
+        z-index: 1000;
+    }
+
+    .menu_list a,
+    .menu_extra a {
+        font-size: clamp(20px, 6vw, 28px);
+        line-height: 1.05;
+    }
+
+    .menu_toggle:checked ~ .menu_list {
+        display: flex;
+    }
+
+    .menu_toggle:checked + .menu_button > span {
+        transform: rotate(45deg);
+    }
+
+    .menu_toggle:checked + .menu_button > span::before {
+        top: 0;
+    }
+
+    .menu_toggle:checked + .menu_button > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+}
+@media (min-width: 768px) {
+    .menu_list {
+        gap: 8px;
+        padding: 12px 8px;
+    }
+
+    .menu_list a {
+        font-size: clamp(28px, 3.5vh, var(--font-size-menu));
+        line-height: 1.05;
+    }
+
+    .menu_extra a {
+        font-size: clamp(24px, 3vh, 34px);
+    }
+}

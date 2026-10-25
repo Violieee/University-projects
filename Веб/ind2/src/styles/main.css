@@ -1,0 +1,22 @@
+.main {
+    width: calc(100% - var(--width-menu));
+    text-align: center;
+    color: var(--color-light-brown);
+}
+
+.main section {
+    padding: 30px 20px;
+}
+
+.main p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: justify;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-h1);
+    color: var(--color-brown);
+}
